@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🍿 Unlimited Movies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Free Movie Streaming</h1>
+        <input type="text" id="search" placeholder="Search 100k+ movies...">
+        <select id="genre"><option>All</option></select>
+        <select id="year"><option>All</option></select>
+    </header>
+    
+    <main id="grid"></main>
+    <div id="modal" class="modal">
+        <span class="close">×</span>
+        <div class="player">
+            <video id="player" controls></video>
+            <div id="torrents"></div>  <!-- Magnet links -->
+            <a id="download" download>💾 Download</a>
+        </div>
+    </div>
+    <script src="tmdb.js"></script>
+    <script src="pirate.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
